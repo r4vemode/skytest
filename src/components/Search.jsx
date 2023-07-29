@@ -22,14 +22,14 @@ function Search() {
 
     const response = await axios.get(`https://api.github.com/search/users?q=${user}`, {
       headers: {
-        'Authorization': `token токен_сюда`
+        'Authorization': `token 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`
       }
     });
 
     const usersWithRepos = await Promise.all(response.data.items.map(async (user) => {
       const userResponse = await axios.get(`https://api.github.com/users/${user.login}`, {
         headers: {
-          'Authorization': `token YOUR_PERSONAL_ACCESS_TOKEN`
+          'Authorization': `token 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`
         }
       });
       return {...user, public_repos: userResponse.data.public_repos}
