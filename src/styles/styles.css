@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main__container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    background-color: #1A162A;
+    padding: 20px;
+}
+
+.users__container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.users__container div{
+    flex-basis: calc(33.33% - 10px);
+    margin: 5px;
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 4px;
+    text-align: center;
+    transition: 0.2s;
+}
+
+.users__container div:hover{
+    transform: scale(1.01);
+}
+
+.form__container,
+.sort__container{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+
+input{
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 1px solid transparent;
+    color: white;
+    outline: none;
+    transition: 0.2s all;
+}
+
+input:focus{
+    border-bottom:  1px solid white;
+    color: white;
+}
+
+input::placeholder{
+    color: gray;
+}
+
+.sort__btn,
+.form__btn,
+.pagination__btn{
+    padding: 10px 20px;
+    background-color: transparent;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    border:1px solid white;
+    transition: 0.2s;
+}
+
+.sort__btn:hover,
+.form__btn:hover,
+.pagination__btn:hover{
+    background-color: white;
+    color: #1A162A;
+}
+
+.pagination{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
