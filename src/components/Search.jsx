@@ -22,7 +22,7 @@ function Search() {
 
     const response = await axios.get(`https://api.github.com/search/users?q=${user}`, {
       headers: {
-        'Authorization': `token YOUR_PERSONAL_ACCESS_TOKEN`
+        'Authorization': `token токен_сюда`
       }
     });
 
